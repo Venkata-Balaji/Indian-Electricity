@@ -1,0 +1,41 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://images.pexels.com/photos/3826435/pexels-photo-3826435.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+    
+    
+}
+.card .card-body input[type=text],input[type=email],input[type=number],input[type=password]{
+    border: none;
+    border-bottom: 3px solid white;
+    outline: none;
+    width: 300px;
+    background-color: transparent;
+    color: white;
+}
+.card .text-center button::after{
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: whitesmoke;
+    display: block;
+    transition: .5s ease-in-out;
+}
+.card .text-center button:hover::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: whitesmoke;
+    display: block;
+}
+.card{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+
+
+}
